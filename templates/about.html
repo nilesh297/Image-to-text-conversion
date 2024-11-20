@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Image Info Chatbot</title>
+    <style>
+        /* Basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .about-container {
+            max-width: 600px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .about-header {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #6c63ff;
+        }
+
+        .about-content {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .feature-item {
+            padding: 8px 0;
+        }
+
+        .feature-item::before {
+            content: "✔";
+            color: #6c63ff;
+            margin-right: 10px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #6c63ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #574bff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-container">
+        <h1 class="about-header">About Image Info Chatbot</h1>
+        <div class="about-content">
+            <p>Welcome to the Image Info Chatbot! This chatbot is designed to help you understand images better. Upload an image, and our AI-powered system will extract key details from it. You can also ask specific questions about the uploaded image, and our chatbot will try to answer them for you.</p>
+            <p>Our goal is to make image information accessible and interactive, whether you’re using this tool for educational, professional, or personal purposes.</p>
+        </div>
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li class="feature-item">Upload an image and get a detailed caption</li>
+            <li class="feature-item">Ask follow-up questions about the image</li>
+            <li class="feature-item">Uses advanced AI and computer vision technologies</li>
+            <li class="feature-item">Easy-to-use interface for seamless interaction</li>
+        </ul>
+        <a href="{{ url_for('index') }}"class="back-button">Back to Chat</a>
+    </div>
+
+</body>
+</html>
